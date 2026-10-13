@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\benchmark.obj",
+            "outputs": [
+                "x64\\Debug\\benchmark.h_D000AB90D74A7058.ifc.dt.module.json",
+                "x64\\Debug\\benchmark.h_D000AB90D74A7058.ifc.dt.d.json",
+                "x64\\Debug\\benchmark.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "D:\\source\\repos\\allocator\\allocator\\benchmark.h",
+                    "source-path": "d:\\source\\repos\\allocator\\allocator\\benchmark.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\benchmark.h.obj",
+            "outputs": [
+                "D:\\source\\repos\\allocator\\allocator\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "D:\\source\\repos\\allocator\\allocator\\x64\\Debug\\benchmark.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "benchmark.h",
+                    "source-path": "d:\\source\\repos\\allocator\\allocator\\benchmark.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
