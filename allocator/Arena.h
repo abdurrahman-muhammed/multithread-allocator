@@ -1,5 +1,6 @@
 #pragma once
 #include <cstddef>
+#define NOMINMAX
 #include <Windows.h>
 
 struct BlockHeader
@@ -25,4 +26,6 @@ private:
 	std::size_t m_capacity;
 	std::size_t m_offset;
 	BlockHeader* m_freeList;
+
+	static constexpr std::size_t MIN_PAYLOAD = 16;
 };
