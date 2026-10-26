@@ -3,17 +3,14 @@
 
 int main()
 {
-	Arena arena(100);
+	Arena arena(256);
 
-	void* a = arena.allocate(3);
-	void* b = arena.allocate(7);
-	void* c = arena.allocate(5);
+	void* a = arena.allocate(64, 16);
+	void* b = arena.allocate(32, 16);
 
-	auto A = reinterpret_cast<std::uintptr_t>(a);
-	auto B = reinterpret_cast<std::uintptr_t>(b);
-	auto C = reinterpret_cast<std::uintptr_t>(c);
-	
-	std::cout << "A % 16: " << A % 16 << std::endl;
-	std::cout << "B % 16: " << B % 16<< std::endl;
-	std::cout << "C % 16: " << C % 16<< std::endl;
+	arena.free(a);
+
+	void* c = arena.allocate(24, 16);
+
+	std::cout << (a == c) << '\n';
 }
